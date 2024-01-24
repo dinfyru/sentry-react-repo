@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" lang="ru" content="">
+    <meta name="revisit" content="">
+    <meta name="robots" content="">
+    <meta name="viewport" content="width=1366, minimum-scale=0.1, maximum-scale=1">
+    <style>
+        @keyframes fa-spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .blocks-loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+
+        .blocks-loading::before {
+            content: "";
+            display: inline-block;
+            background: transparent;
+            border: 3px solid #30E333;
+            border-bottom-color: transparent;
+            border-radius: 100%;
+            width: 30px;
+            height: 30px;
+            animation: fa-spin 0.7s infinite linear;
+        }
+    </style>
+</head>
+<body class="theme--light">
+
+<div id="wrapper">
+    <div id="app_entry">
+        <div class="blocks-loading"></div>
+    </div>
+</div>
+</body>
+</html>
